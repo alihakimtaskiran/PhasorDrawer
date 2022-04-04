@@ -10,7 +10,7 @@ class Drawer(object):
         
     def addM(self, phasors):
         self.__phasors+=phasors
-    def graph(self,scalar, view_time, save=False):
+    def graph(self,scalar, view_time):
         t=turtle.Turtle()
         t.speed(scalar*len(self.__phasors))
         for phasor in self.__phasors:
